@@ -1,7 +1,7 @@
 export const resources = {
   en: {
     translation: {
-      brand: { name: "Carepack", tagline: "We pack — you breathe." },
+      brand: { name: "Carepack", tagline: "We pack, you breathe." },
 
       nav: {
         about: "About the service",
@@ -17,127 +17,159 @@ export const resources = {
       hero: {
         title: "Carepack",
         subtitle: "Professional packing for a stress-free move.",
-        text:
-          "We pack everything for you — from wrapping to labeling — so you can focus on what matters. Everything ready in one day.",
+        text: "We pack everything for you, from wrapping to labeling, so you can focus on what matters. Everything ready in one day.",
         ctaPrimary: "Get in touch",
         ctaSecondary: "See packages",
-        note:
-          "Full-day packing service with all materials included · Tartu and surrounding areas",
+        note: "All materials included · weekdays & weekends · Tartu and surrounding areas",
       },
 
       banners: {
         accent: {
-          part1: "Complete packing of",
+          item1: "Complete packing of",
           highlight1: "all belongings",
-          part2: "· Materials",
+          item2: "Materials",
           highlight2: "included",
-          part3: "· Tartu and surrounding areas",
+          item3: "Weekdays &",
+          highlight3: "weekends",
+          item4: "Tartu and surrounding areas",
         },
         eco: {
           part1: "Using",
           highlight: "eco-friendly",
           part2: "packing materials",
         },
+        unpack: {
+          title: "Moving within Tartu?",
+          text: "If you're relocating within Tartu or the surrounding area, we also offer unpacking at your new home. We'll sort everything into place so you can settle in from day one.",
+          cta: "Ask about unpacking",
+        },
       },
 
       about: {
         title: "Professional packing support",
 
-        stressTitle: "The challenge",
+        stressTitle: "Moving is hard",
         stressText:
-          "Moving is overwhelming. Decisions pile up, fatigue sets in, and stress builds fast.\n\nThe real challenge isn't the boxes — it's the mental and emotional overload.",
+          "Moving is overwhelming. Decisions pile up fast, and that's before you touch a single box.",
 
-        solutionTitle: "Our approach",
+        solutionTitle: "We take it all",
         solutionText:
-          "We pack everything for you. With years of moving experience, we handle fragile items with care, wrap everything securely, and keep the process organized from start to finish.\n\nNo rushing, no mess — just calm, focused work.",
+          "We handle all the packing for you. Room by room, fragile things wrapped with care, every box labeled. No rushing, no mess.",
 
-        serviceTitle: "What you get",
+        serviceTitle: "You just breathe",
         serviceText:
-          "A team of two arrives with all necessary materials. We pack room by room, label everything clearly, and maintain a steady workflow.\n\nBy evening, your home is completely ready for the move.",
+          "Two people arrive with all materials and pack your home from start to finish. Everything ready for the move.",
       },
 
       process: {
-        ecoBanner: { part1: "Clients recommend us to friends —", highlight: "every other booking", part2: "comes from a referral" },
-        title: "It all starts with one message",
+        ecoBanner: {
+          part1: "Clients recommend us to friends,",
+          highlight: "every other booking",
+          part2: "comes from a referral",
+        },
+        title: "How it works",
         steps: [
-          { title: "Message us and describe your home", text: "Tell us the size of your home, what needs packing, and when works for you. No forms, no calls — just a quick message, like texting a friend." },
-          { title: "We sort out every detail in advance", text: "Package, date, arrival time — all confirmed before the day. No surprises, no last-minute questions." },
-          { title: "On the day, we show up at your door", text: "We arrive on time and bring everything: boxes, bubble wrap, tape, markers. There's nothing you need to prepare." },
-          { title: "We work. You don't.", text: "Room by room, we pack everything carefully. Fragile items get extra attention, every box gets a label. You can have coffee, handle paperwork, or just breathe — we've got it covered." },
-          { title: "By evening, it's done", text: "Packed, labeled, stacked. Your home is ready for the truck. All that's left is moving into your new place." },
+          {
+            title: "Message us and describe your home",
+            text: "Tell us the size of your home, what needs packing, and when works for you. No forms, no calls. Just a message.",
+          },
+          {
+            title: "We sort out every detail in advance",
+            text: "Package, date, arrival time: all confirmed before the day. No surprises, no last-minute questions.",
+          },
+          {
+            title: "On the day, we're at your door",
+            text: "We arrive on time with everything: boxes, bubble wrap, tape, markers. There's nothing you need to prepare.",
+          },
+          {
+            title: "We work. You don't.",
+            text: "Room by room, we pack everything carefully. Fragile items get extra attention, every box gets a label. Make coffee, sort paperwork, or just breathe. We'll handle it.",
+          },
+          {
+            title: "It's done",
+            text: "Packed, labeled, stacked. Your home is ready for the move.",
+          },
         ],
       },
 
       notPack: {
-        title: "What we don't pack",
+        title: "We don't pack",
         intro: "",
         items: [
           "Furniture and large interior items",
           "Appliances connected to utilities",
           "Very heavy or unusual items",
           "Hazardous substances and chemicals",
-          "Plants and animals",
+          "Plants",
+          "Animals",
         ],
-        outro: "Everything else we pack with care. Not sure about something? Just ask — we'll sort it out before the day.",
+        outro:
+          "Everything else we pack. Not sure about something? Write to us and we'll figure it out before the day.",
       },
 
       packages: {
-        title: "Packages & Pricing",
+        title: "Packages",
         intro:
           "Choose the package that fits your home. All materials included.",
         s: {
-          name: "Small · 1 room",
-          details: "5 hours · 2 people · all materials · from €600",
+          name: "Small · 1-bedroom apartment",
+          details: "from 5 hours · 2 people · all materials · from €600",
         },
         m: {
-          name: "Medium · 2 rooms",
-          details: "7 hours · 2 people · all materials · from €900",
+          name: "Medium · 2-bedroom apartment",
+          details: "from 7 hours · 2 people · all materials · from €900",
         },
         l: {
-          name: "Large · 3 rooms",
-          details: "9 hours · 2 people · all materials · from €1200",
+          name: "Large · 3-bedroom apartment",
+          details: "from 9 hours · 2 people · all materials · from €1200",
         },
         cta: "Order service",
         bannerTitle: "Got a big home?",
-        bannerText: "Get your estimate — just tell us your home size and location.",
+        bannerText:
+          "Get your estimate. Just tell us your home size and location.",
       },
 
       payment: {
         title: "Booking & Payment",
         schedule: "50% on booking · 50% after packing is done",
-        description: "The deposit secures your date and gives us time to prepare everything — simple and transparent, no hidden charges. Extra hours beyond the package are billed at €100 per hour.",
+        description:
+          "The deposit secures your date and gives us time to prepare everything. Extra hours beyond the package are billed at €100 per hour.",
         termsHint: "Full terms and conditions are available on the",
       },
 
       forWho: {
-        title: "This is for you, if...",
+        title: "Who we're for",
         items: [
           {
-            heading: "you're a couple and want to move <span class='hw-double'>without arguments</span>",
+            heading:
+              "you're a couple and want to move <span class='hw-double'>without arguments</span>",
             paragraphs: [
-              "Moving almost always turns into arguments about things. What to keep, what to throw out, what you'll 'definitely need someday'. When everyone's tired and time is short, even simple decisions start to feel like a fight.",
-              "We remove the root cause of those conflicts. You don't have to sort through every item on moving day — everything gets packed and comes with you. The question of 'keep or let go' can wait until later, in your new home, when things are calmer. Unpack box by box, at your own pace — no pressure, no rush.",
+              "Moving almost always turns into arguments: what to keep, what to toss. When everyone's tired and time is short, even small decisions become a fight.",
+              "We remove the root cause. Everything gets packed and comes with you. You can figure out what to keep later, in your new home, at your own pace.",
             ],
           },
           {
-            heading: "you have kids who <span class='hw-dashed'>need you</span> right now, not boxes",
+            heading:
+              "you have kids who <span class='hw-dashed'>need you</span> right now, not boxes",
             paragraphs: [
-              "When there are children in the house, moving gets twice as hard. Every child has their 'treasures' — things they're scared to lose. Sorting through them in the middle of chaos only adds to the anxiety of an already stressful moment.",
-              "Watching the kids and packing the whole apartment at the same time is a double load that drains you. We take care of the packing so parents can stay close to their children and help them get through the change calmly.",
+              "With kids around, moving gets twice as hard. Every child has things they're scared to lose. Sorting through them mid-chaos only adds to the stress.",
+              "Packing and looking after kids at the same time is a double load. We take care of the packing so you can stay close to your children.",
             ],
           },
           {
-            heading: "you don't want to <span class='hw-wave'>spend ages on packing</span>",
+            heading:
+              "you don't want to <span class='hw-wave'>spend ages on packing</span>",
             paragraphs: [
-              "Think you know how much stuff you have? Most people say 'not that much' — and then find three boxes just for cables.",
-              "Dealing with every item on moving day is extra stress at a time when you already have plenty to handle: paperwork, logistics, a new space to figure out. It's far smarter to move everything first, then calmly decide in the new place what stays and what goes.",
+              "Think you don't have that much stuff? Most people find three boxes just for cables.",
+              "Dealing with every item on moving day adds stress when you already have plenty to handle. Smarter to move everything first, then decide calmly what stays.",
             ],
           },
           {
-            heading: "you want to move and <span class='hw-underline'>not fall apart</span>",
+            heading:
+              "you want to move and <span class='hw-underline'>not fall apart</span>",
             paragraphs: [
-              "Moving is one of the most stressful moments in a couple's life. Not because something goes wrong — just because there are too many decisions packed into too little time.",
-              "We help take some of that weight off — so you still have energy left after the move for things that matter more than boxes.",
+              "Moving is one of the most stressful moments in life. Not because something goes wrong, just because there are too many decisions in too little time.",
+              "We take the packing off your hands, so you still have energy left after the move.",
             ],
           },
         ],
@@ -145,15 +177,15 @@ export const resources = {
 
       contact: {
         title: "Get in touch",
-        text:
-          "Tell us about your move and we'll figure out the details together. No pressure, just clear answers.",
-        email: "hello@carepack.ee",
-        hint: "We respond within 24 hours",
+        text: "Tell us about your move and we'll sort out the details together. Leave your phone number and we'll call you back.",
+        hint: "We work weekdays and weekends, and speak Estonian, English and Russian.",
+        email: "info@carepack.ee",
       },
 
       terms: {
         title: "Terms & Conditions",
-        acceptance: "By paying the deposit (the first instalment of the service fee), the client confirms that they have read, understood and fully accept these terms and conditions.",
+        acceptance:
+          "By paying the deposit (the first instalment of the service fee), the client confirms that they have read, understood and fully accept these terms and conditions.",
         sections: [
           {
             heading: "1. Scope of Service",
@@ -211,15 +243,14 @@ export const resources = {
       },
 
       footer: {
-        note:
-          "© 2025 Carepack · Professional packing service in Tartu",
+        note: "© 2025 Carepack · Professional packing service in Tartu",
       },
     },
   },
 
   ru: {
     translation: {
-      brand: { name: "Carepack", tagline: "Мы пакуем — вы выдыхаете." },
+      brand: { name: "Carepack", tagline: "Мы пакуем, вы выдыхаете." },
 
       nav: {
         about: "О сервисе",
@@ -235,127 +266,157 @@ export const resources = {
       hero: {
         title: "Carepack",
         subtitle: "Профессиональная упаковка для спокойного переезда.",
-        text:
-          "Мы упакуем всё за вас — от обёртывания до маркировки. Вы сможете сосредоточиться на главном. Всё готово за один день.",
+        text: "Мы упакуем всё за вас: от обёртывания до маркировки. Вы сможете сосредоточиться на главном. Всё готово за один день.",
         ctaPrimary: "Связаться с нами",
         ctaSecondary: "Посмотреть пакеты",
-        note:
-          "Упаковка за день со всеми материалами · Тарту и окрестности",
+        note: "Все материалы включены · будни и выходные · Тарту и окрестности",
       },
 
       banners: {
         accent: {
-          part1: "Полная упаковка",
+          item1: "Полная упаковка",
           highlight1: "всех вещей",
-          part2: "· Материалы",
+          item2: "Материалы",
           highlight2: "включены",
-          part3: "· Тарту и окрестности",
+          item3: "Будни и",
+          highlight3: "выходные",
+          item4: "Тарту и окрестности",
         },
         eco: {
           part1: "Используем",
           highlight: "экологичные",
           part2: "материалы для упаковки",
         },
+        unpack: {
+          title: "Переезжаете в пределах Тарту?",
+          text: "Если вы переезжаете внутри Тарту или в ближайших окрестностях, мы также предлагаем распаковку вещей на новом месте. Приедем и разложим всё по местам, чтобы вы могли сразу почувствовать себя дома.",
+          cta: "Узнать подробнее",
+        },
       },
 
       about: {
         title: "Профессиональная упаковка без хаоса",
 
-        stressTitle: "Проблема",
+        stressTitle: "Переезд это тяжело",
         stressText:
-          "Переезд выматывает. Решения копятся, усталость накапливается, стресс растёт.\n\nГлавная сложность — не коробки, а эмоциональная и умственная перегрузка.",
+          "Переезд выматывает. Решения накапливаются, усталость растёт. И это ещё до первой коробки.",
 
-        solutionTitle: "Наш подход",
+        solutionTitle: "Мы берём всё",
         solutionText:
-          "Мы упакуем всё за вас. С многолетним опытом переездов мы бережно обращаемся с хрупкими предметами, надёжно оборачиваем всё и поддерживаем порядок от начала до конца.\n\nБез спешки, без беспорядка — только спокойная, сфокусированная работа.",
+          "Мы берём упаковку на себя. Бережно, комнату за комнатой, с маркировкой каждой коробки. Без спешки и хаоса.",
 
-        serviceTitle: "Что вы получаете",
+        serviceTitle: "Вы просто выдыхаете",
         serviceText:
-          "Команда из двух человек приезжает со всеми материалами. Мы упаковываем комнату за комнатой, чётко маркируем всё и поддерживаем стабильный темп.\n\nК вечеру ваш дом полностью готов к переезду.",
+          "Двое приезжают со всеми материалами и упаковывают дом от начала до конца. Всё готово к машине.",
       },
 
       process: {
-        ecoBanner: { part1: "Клиенты рекомендуют нас друзьям —", highlight: "каждый второй", part2: "приходит по совету" },
-        title: "Всё начинается с одного сообщения",
+        ecoBanner: {
+          part1: "Клиенты рекомендуют нас друзьям,",
+          highlight: "каждый второй",
+          part2: "приходит по совету",
+        },
+        title: "Как это работает",
         steps: [
-          { title: "Напишите нам и опишите жильё", text: "Расскажите, сколько комнат, что нужно упаковать и когда удобно. Никаких форм, никаких звонков — просто напишите, как другу." },
-          { title: "Мы согласуем всё до последней детали", text: "Пакет, дата, время приезда — всё подтверждается заранее. Никаких сюрпризов и вопросов в последний момент." },
-          { title: "В нужный день мы появляемся у вашей двери", text: "Приезжаем вовремя и привозим всё с собой: коробки, пузырчатую плёнку, скотч, маркеры. Вам не нужно ничего готовить." },
-          { title: "Мы работаем. Вы — нет.", text: "Упаковываем комнату за комнатой. Хрупкое — особо аккуратно, каждая коробка подписана. Вы можете пить кофе, звонить, заниматься детьми — мы справимся." },
-          { title: "К вечеру всё готово", text: "Упаковано, подписано, сложено стопками. Ваш дом готов к машине. Осталось только въехать в новое место." },
+          {
+            title: "Напишите нам и опишите жильё",
+            text: "Расскажите, сколько комнат, что нужно упаковать и когда удобно. Никаких форм, никаких звонков. Просто напишите.",
+          },
+          {
+            title: "Мы согласуем всё до последней детали",
+            text: "Пакет, дата, время приезда: всё подтверждается заранее. Никаких сюрпризов и вопросов в последний момент.",
+          },
+          {
+            title: "В день переезда мы уже у вашей двери",
+            text: "Приезжаем вовремя и привозим всё с собой: коробки, пузырчатую плёнку, скотч, маркеры. Вам не нужно ничего готовить.",
+          },
+          {
+            title: "Мы работаем. Вы отдыхаете.",
+            text: "Упаковываем комнату за комнатой. Хрупкое особо аккуратно, каждая коробка подписана. Пейте кофе, занимайтесь своими делами. Мы всё сделаем.",
+          },
+          {
+            title: "Всё готово",
+            text: "Упаковано, подписано, сложено. Ваш дом готов к переезду.",
+          },
         ],
       },
 
       notPack: {
-        title: "Что мы не упакуем",
+        title: "Не упакуем",
         intro: "",
         items: [
           "Мебель и крупные предметы",
           "Бытовую технику, подключённую к коммуникациям",
           "Очень тяжёлые или нестандартные предметы",
           "Опасные вещества, жидкости и химикаты",
-          "Растения и животных",
+          "Растения",
+          "Животных",
         ],
-        outro: "Всё остальное упакуем. Сомневаетесь по какому-то предмету — просто напишите, разберёмся вместе.",
+        outro:
+          "Всё остальное упакуем. Не уверены насчёт какой-то вещи? Напишите нам, разберёмся до переезда.",
       },
 
       packages: {
-        title: "Пакеты и цены",
-        intro:
-          "Выберите пакет под размер вашего дома. Все материалы включены.",
+        title: "Пакеты",
+        intro: "Выберите пакет под размер вашего дома. Все материалы включены.",
         s: {
-          name: "Малый · 1 комната",
-          details: "5 часов · 2 человека · все материалы · от €600",
+          name: "Малый · 1-комнатная квартира",
+          details: "от 5 часов · 2 человека · все материалы · от €600",
         },
         m: {
-          name: "Средний · 2 комнаты",
-          details: "7 часов · 2 человека · все материалы · от €900",
+          name: "Средний · 2-комнатная квартира",
+          details: "от 7 часов · 2 человека · все материалы · от €900",
         },
         l: {
-          name: "Большой · 3 комнаты",
-          details: "9 часов · 2 человека · все материалы · от €1200",
+          name: "Большой · 3-комнатная квартира",
+          details: "от 9 часов · 2 человека · все материалы · от €1200",
         },
         cta: "Заказать услугу",
         bannerTitle: "Большой дом?",
-        bannerText: "Получите расчёт — просто скажите размер дома и адрес.",
+        bannerText: "Получите расчёт: просто скажите размер дома и адрес.",
       },
 
       payment: {
         title: "Бронирование и оплата",
         schedule: "50% при бронировании · 50% после завершения упаковки",
-        description: "Депозит фиксирует дату и даёт нам время всё подготовить — прозрачно и без скрытых доплат. Каждый дополнительный час сверх пакета оплачивается по ставке 100 € в час.",
-        termsHint: "Полные условия — на странице",
+        description:
+          "Депозит фиксирует дату и даёт нам время всё подготовить. Каждый дополнительный час сверх пакета оплачивается по ставке 100 € в час.",
+        termsHint: "Полные условия на странице",
       },
 
       forWho: {
-        title: "Это для вас, если...",
+        title: "Кому мы подходим",
         items: [
           {
-            heading: "вы пара и хотите переехать <span class='hw-double'>без ссор</span>",
+            heading:
+              "вы пара и хотите переехать <span class='hw-double'>без ссор</span>",
             paragraphs: [
-              "Переезд почти всегда превращается в споры о вещах. Что взять, что выбросить, что «точно ещё пригодится». Когда все устали, а времени нет, даже простые решения начинают раздражать.",
-              "Мы убираем саму причину этих конфликтов. Не нужно разбираться с каждой вещью в день переезда — всё аккуратно упаковывается и едет с вами. К вопросу «оставить или нет» можно вернуться позже, уже в новом доме, в спокойной обстановке. Распаковывать коробки можно в своём темпе — без давления и спешки.",
+              "Переезд почти всегда превращается в споры: что взять, что выбросить. Когда все устали, даже простые решения становятся поводом поругаться.",
+              "Мы убираем причину конфликтов: всё упаковывается и едет с вами. Разберётесь в новом доме, спокойно и без давления.",
             ],
           },
           {
-            heading: "у вас дети, и им сейчас <span class='hw-dashed'>нужны вы</span>, а не коробки",
+            heading:
+              "у вас дети, и им сейчас <span class='hw-dashed'>нужны вы</span>, а не коробки",
             paragraphs: [
-              "Когда в доме дети, переезд становится вдвойне сложнее. У каждого ребёнка есть свои «сокровища» — вещи, с которыми страшно расставаться. Разбирать их в суматохе — значит добавлять тревоги и без того непростому моменту.",
-              "Одновременно следить за детьми и паковать квартиру — двойная нагрузка, которая изматывает. Мы берём упаковку на себя, чтобы родители могли быть рядом с детьми и помочь им спокойно пережить перемены.",
+              "С детьми переезд вдвойне тяжелее. Каждый ребёнок боится потерять свои вещи, а разбирать их в суматохе только добавляет тревоги.",
+              "Паковать вещи и следить за детьми одновременно слишком тяжело. Мы берём упаковку на себя, чтобы вы могли быть рядом с детьми.",
             ],
           },
           {
-            heading: "вам жаль <span class='hw-wave'>тратить уйму времени</span> на упаковку",
+            heading:
+              "вам жаль <span class='hw-wave'>тратить уйму времени</span> на упаковку",
             paragraphs: [
-              "Вы уверены, что знаете, сколько у вас вещей? Большинство людей думает «ну, немного», а потом обнаруживает три коробки только с проводами.",
-              "Разбираться с каждой вещью в день переезда — лишний стресс в момент, когда и так хватает забот: документы, транспорт, новое пространство. Гораздо разумнее перевезти всё сразу, а в новом месте не спеша решить, что остаётся, а с чем можно расстаться.",
+              "Думаете, что вещей немного? Большинство находит три коробки только с проводами.",
+              "Разбираться с каждой вещью прямо в день переезда создаёт лишний стресс. Умнее перевезти всё сразу, а в новом месте решить, что оставить.",
             ],
           },
           {
-            heading: "хотите переехать и <span class='hw-underline'>не сломаться</span>",
+            heading:
+              "хотите переехать и <span class='hw-underline'>не сломаться</span>",
             paragraphs: [
-              "Переезд — один из самых стрессовых моментов в жизни пары. Не потому что что-то идёт не так, а просто потому что решений слишком много за слишком короткое время.",
-              "Мы помогаем снять часть этой нагрузки — чтобы после переезда у вас оставались силы на то, что важнее коробок.",
+              "Переезд входит в число самых стрессовых событий. Не потому что что-то идёт не так, а просто слишком много решений за слишком короткое время.",
+              "Мы берём упаковку на себя, чтобы после переезда у вас ещё оставались силы.",
             ],
           },
         ],
@@ -363,15 +424,15 @@ export const resources = {
 
       contact: {
         title: "Связаться с нами",
-        text:
-          "Расскажите о своём переезде, и мы вместе разберём детали. Без давления, только чёткие ответы.",
-        email: "hello@carepack.ee",
-        hint: "Ответим в течение 24 часов",
+        text: "Расскажите о своём переезде — разберём всё вместе. Оставьте номер телефона, и мы перезвоним.",
+        hint: "Работаем в будни и выходные, говорим на эстонском, английском и русском.",
+        email: "info@carepack.ee",
       },
 
       terms: {
         title: "Условия",
-        acceptance: "Оплачивая депозит (первую часть стоимости услуги), клиент подтверждает, что ознакомился с настоящими условиями в полном объёме, понимает их содержание и безоговорочно с ними соглашается.",
+        acceptance:
+          "Оплачивая депозит (первую часть стоимости услуги), клиент подтверждает, что ознакомился с настоящими условиями в полном объёме, понимает их содержание и безоговорочно с ними соглашается.",
         sections: [
           {
             heading: "1. Предмет договора и состав услуги",
@@ -429,15 +490,14 @@ export const resources = {
       },
 
       footer: {
-        note:
-          "© 2025 Carepack · Профессиональная упаковка в Тарту",
+        note: "© 2025 Carepack · Профессиональная упаковка в Тарту",
       },
     },
   },
 
   et: {
     translation: {
-      brand: { name: "Carepack", tagline: "Me pakime — sina hingad." },
+      brand: { name: "Carepack", tagline: "Me pakime, sina hingad." },
 
       nav: {
         about: "Teenuse kohta",
@@ -453,127 +513,159 @@ export const resources = {
       hero: {
         title: "Carepack",
         subtitle: "Professionaalne pakkimine stressivabaks kolimiseks.",
-        text:
-          "Võtame kogu pakkimisprotsessi enda peale — sorteerimisest märgistamiseni. Saad keskenduda olulisele. Kõik valmis ühe päevaga.",
+        text: "Võtame kogu pakkimisprotsessi enda peale, sorteerimisest märgistamiseni. Saad keskenduda olulisele. Kõik valmis ühe päevaga.",
         ctaPrimary: "Võta ühendust",
         ctaSecondary: "Vaata pakette",
-        note:
-          "Täispäeva pakkimisteenus koos kõigi materjalidega · Tartu ja ümbrus",
+        note: "Kõik materjalid kaasas · tööpäevad ja nädalavahetused · Tartu ja ümbrus",
       },
 
       banners: {
         accent: {
-          part1: "Täielik pakkimine",
+          item1: "Täielik pakkimine",
           highlight1: "kõigist asjadest",
-          part2: "· Materjalid",
+          item2: "Materjalid",
           highlight2: "kaasas",
-          part3: "· Tartu ja ümbrus",
+          item3: "Tööpäevad ja",
+          highlight3: "nädalavahetused",
+          item4: "Tartu ja ümbrus",
         },
         eco: {
           part1: "Kasutame",
           highlight: "keskkonnasõbralikke",
           part2: "pakkematerjale",
         },
+        unpack: {
+          title: "Kolite Tartus või lähiümbruses?",
+          text: "Kui kolite Tartu piires või lähedal asuvas piirkonnas, pakume ka lahtipakkimist teie uues kodus. Paigutame kõik asjalikult ära, et saaksite esimesest päevast alates ennast kodus tunda.",
+          cta: "Küsige lahtipakkimise kohta",
+        },
       },
 
       about: {
         title: "Professionaalne pakkimine ilma kaoseta",
 
-        stressTitle: "Probleem",
+        stressTitle: "Kolimine on raske",
         stressText:
-          "Kolimine kurnab. Aastate jagu asju vajab sorteerimist, otsused kuhjuvad, stress kasvab.\n\nPeamine väljakutse pole kastid — vaid emotsionaalne ja vaimne ülekoormus.",
+          "Kolimine kurnab. Otsused kuhjuvad kiiresti ja see on veel enne esimest kasti.",
 
-        solutionTitle: "Meie lähenemine",
+        solutionTitle: "Me võtame kõik",
         solutionText:
-          "Toome kaosesse struktuuri. Aastatepikkune kogemus aitab meil õrnu esemeid hoolikalt käsitseda, asju loogiliselt grupeerida ja korda hoida algusest lõpuni.\n\nIlma kiirustamata, ilma segaduseta — ainult rahulik, keskendunud töö.",
+          "Võtame kogu pakkimise enda peale. Tuba-tuba, õrnad esemed hoolikalt, iga kast märgistatult. Ilma kiirustamata.",
 
-        serviceTitle: "Mida saad",
+        serviceTitle: "Sa lihtsalt hingad",
         serviceText:
-          "Kahe inimese meeskond saabub kõigi vajalike materjalidega. Pakime tuba-toas, märgistame kõik selgelt ja hoiame stabiilset töötemot.\n\nÕhtuks on kodu täielikult kolimiseks valmis.",
+          "Kaks inimest saabuvad kõigi materjalidega ja pakivad kodu algusest lõpuni. Kõik on kolimiseks valmis.",
       },
 
       process: {
-        ecoBanner: { part1: "Kliendid soovitavad meid sõpradele —", highlight: "iga teine broneering", part2: "tuleb soovituse kaudu" },
-        title: "Kõik algab ühe sõnumiga",
+        ecoBanner: {
+          part1: "Kliendid soovitavad meid sõpradele,",
+          highlight: "iga teine broneering",
+          part2: "tuleb soovituse kaudu",
+        },
+        title: "Kuidas see toimib",
         steps: [
-          { title: "Kirjuta meile ja kirjelda oma kodu", text: "Ütle meile kodu suurus, mida on vaja pakkida ja millal sobib. Ei vorme, ei kõnesid — lihtsalt kirjuta, nagu sõbrale." },
-          { title: "Lepime kõik detailid eelnevalt kokku", text: "Pakett, kuupäev, saabumisaeg — kõik kinnitatakse enne päeva. Üllatusi ei tule, küsimusi viimasel hetkel ka mitte." },
-          { title: "Õigel päeval ilmume sinu ukse taha", text: "Tuleme täpselt õigel ajal ja toome kõik kaasa: kastid, mullikile, teip, markerid. Sina ei pea midagi ette valmistama." },
-          { title: "Meie töötame. Sina mitte.", text: "Tuba-toa haaval pakime kõik hoolikalt. Haprad esemed saavad erilist tähelepanu, iga kast märgistatakse. Võid teha kohvi, helistada või lihtsalt hingata — meie hoolitseme kõige eest." },
-          { title: "Õhtuks on kõik valmis", text: "Pakitud, märgistatud, virna pandud. Kodu on veoauto jaoks valmis. Jääb üle vaid uude kohta kolida." },
+          {
+            title: "Kirjuta meile ja kirjelda oma kodu",
+            text: "Ütle meile kodu suurus, mida on vaja pakkida ja millal sobib. Ei vorme, ei kõnesid. Lihtsalt kirjuta.",
+          },
+          {
+            title: "Lepime kõik detailid eelnevalt kokku",
+            text: "Pakett, kuupäev, saabumisaeg: kõik kinnitatakse enne päeva. Üllatusi ei tule, küsimusi viimasel hetkel ka mitte.",
+          },
+          {
+            title: "Kolimispäeval oleme sinu ukse taga",
+            text: "Tuleme täpselt õigel ajal ja toome kõik kaasa: kastid, mullikile, teip, markerid. Sina ei pea midagi ette valmistama.",
+          },
+          {
+            title: "Meie töötame. Sina puhkad.",
+            text: "Tuba-toa haaval pakime kõik hoolikalt. Haprad esemed saavad erilist tähelepanu, iga kast märgistatakse. Tee kohvi, tegele oma asjadega. Meie hoolitseme kõige eest.",
+          },
+          {
+            title: "Kõik on valmis",
+            text: "Pakitud, märgistatud, korras. Kodu on kolimiseks valmis.",
+          },
         ],
       },
 
       notPack: {
-        title: "Mida me ei paki",
+        title: "Ei paki",
         intro: "",
         items: [
           "Mööblit ja suuri sisustusesemeid",
           "Kommunikatsioonidega ühendatud kodutehnikat",
           "Väga raskeid või ebatavalisi esemeid",
           "Ohtlikke aineid, vedelikke ja kemikaale",
-          "Taimi ja loomi",
+          "Taimed",
+          "Loomad",
         ],
-        outro: "Kõike muud pakime hea meelega. Pole kindel mõne eseme osas? Kirjuta meile — arutame enne päeva läbi.",
+        outro:
+          "Kõike muud pakime hea meelega. Pole kindel mõne eseme osas? Kirjuta meile ja arutame enne päeva läbi.",
       },
 
       packages: {
-        title: "Paketid ja hinnad",
+        title: "Paketid",
         intro:
           "Vali pakett, mis sobib sinu kodu suurusega. Kõik materjalid kaasas.",
         s: {
-          name: "Väike · 1 tuba",
-          details: "5 tundi · 2 inimest · kõik materjalid · al. €600",
+          name: "Väike · 1-toaline korter",
+          details: "al. 5 tundi · 2 inimest · kõik materjalid · al. €600",
         },
         m: {
-          name: "Keskmine · 2 tuba",
-          details: "7 tundi · 2 inimest · kõik materjalid · al. €900",
+          name: "Keskmine · 2-toaline korter",
+          details: "al. 7 tundi · 2 inimest · kõik materjalid · al. €900",
         },
         l: {
-          name: "Suur · 3 tuba",
-          details: "9 tundi · 2 inimest · kõik materjalid · al. €1200",
+          name: "Suur · 3-toaline korter",
+          details: "al. 9 tundi · 2 inimest · kõik materjalid · al. €1200",
         },
         cta: "Telli teenus",
         bannerTitle: "Suur kodu?",
-        bannerText: "Küsi hinnapakkumist — ütle lihtsalt kodu suurus ja asukoht.",
+        bannerText:
+          "Küsi hinnapakkumist: ütle lihtsalt kodu suurus ja asukoht.",
       },
 
       payment: {
         title: "Broneerimine ja tasumine",
         schedule: "50% broneerimisel · 50% pärast pakkimise lõppu",
-        description: "Deposiit kinnitab kuupäeva ja annab meile aega kõik ette valmistada — lihtsalt ja läbipaistvalt, varjatud lisakulusid pole. Lisatunnid üle paketi tasutakse 100 € tunnis.",
+        description:
+          "Deposiit kinnitab kuupäeva ja annab meile aega kõik ette valmistada. Lisatunnid üle paketi tasutakse 100 € tunnis.",
         termsHint: "Täielikud tingimused leiad",
       },
 
       forWho: {
-        title: "See on sinu jaoks, kui...",
+        title: "Kellele me sobime",
         items: [
           {
-            heading: "olete paar ja tahate kolida <span class='hw-double'>ilma tülideta</span>",
+            heading:
+              "olete paar ja tahate kolida <span class='hw-double'>ilma tülideta</span>",
             paragraphs: [
-              "Kolimine muutub peaaegu alati vaidluseks asjade üle. Mida võtta, mida ära visata, mida 'kindlasti veel vaja läheb'. Kui kõik on väsinud ja aega napib, ajab isegi lihtsate otsuste tegemine närvi.",
-              "Me eemaldame nende konfliktide põhjuse. Kolimispäeval ei pea iga asja üle otsustama — kõik pakitakse korralikult ja läheb kaasa. Küsimuse 'jätta või mitte' saab lahendada hiljem, uues kodus, rahulikumas õhkkonnas. Karpe saab lahti pakkida omas tempos — ilma surve ja kiiruseta.",
+              "Kolimine muutub peaaegu alati vaidluseks: mida võtta, mida ära visata. Kui kõik on väsinud, ajab isegi lihtne otsus tülli.",
+              "Me eemaldame konflikti põhjuse: kõik pakitakse ja läheb kaasa. Uues kodus saab rahulikult otsustada, mis jääb.",
             ],
           },
           {
-            heading: "teil on lapsed, kes vajavad praegu <span class='hw-dashed'>teid</span>, mitte karpe",
+            heading:
+              "teil on lapsed, kes vajavad praegu <span class='hw-dashed'>teid</span>, mitte karpe",
             paragraphs: [
-              "Kui majas on lapsed, muutub kolimine kaks korda raskemaks. Igal lapsel on oma 'aarded' — asjad, millest on hirm lahkuda. Nende läbisorteerimine segaduses lisab ärevust niigi keerulisele hetkele.",
-              "Samal ajal laste eest hoolt kanda ja kogu korterit pakkida on topeltkoormus, mis kurnab. Me võtame pakkimise enda peale, et vanemad saaksid olla laste kõrval ja aidata neil muutustega rahulikult toime tulla.",
+              "Lastega kolis kaks korda raskem. Igal lapsel on asjad, millest on hirm lahkuda, ja nende sorteerimine segaduses lisab ainult ärevust.",
+              "Laste eest hoolt kanda ja samal ajal pakkida on topeltkoormus. Me võtame pakkimise enda peale, et saaksite lastega koos olla.",
             ],
           },
           {
-            heading: "kahju raisata pakkimisele <span class='hw-wave'>hirmsalt palju aega</span>",
+            heading:
+              "kahju raisata pakkimisele <span class='hw-wave'>hirmsalt palju aega</span>",
             paragraphs: [
-              "Kas olete kindel, kui palju teil asju on? Enamik inimesi arvab 'noh, natuke' — ja avastab siis kolm kasti ainult juhtmeid.",
-              "Iga asjaga tegeleda kolimispäeval on lisastress hetkel, kui muudki muret: dokumendid, transport, uus ruum. Palju mõistlikum on kõigepealt kõik ära kolida, siis uues kohas rahulikult otsustada, mis jääb ja millest saab lahti.",
+              "Arvate, et asju on vähe? Enamik avastab kolm kasti ainult juhtmeid.",
+              "Iga asjaga kolimispäeval tegeleda on lisastress. Mõistlikum on kõik ära kolida, siis uues kohas rahulikult otsustada.",
             ],
           },
           {
-            heading: "tahate kolida ja <span class='hw-underline'>ilma läbipõlemiseta</span>",
+            heading:
+              "tahate kolida ja <span class='hw-underline'>ilma läbipõlemiseta</span>",
             paragraphs: [
-              "Kolimine on üks stressirohkemaid hetki paari elus. Mitte sellepärast, et midagi läheks valesti — lihtsalt seetõttu, et otsuseid on liiga palju liiga lühikese aja jooksul.",
-              "Me aitame osa sellest koormusest maha võtta — et pärast kolimist jääks teil jõudu asjade jaoks, mis on tähtsamad kui karbid.",
+              "Kolimine on üks stressirohkemaid hetki. Mitte sellepärast, et midagi läheks valesti, vaid lihtsalt liiga palju otsuseid liiga lühikese aja jooksul.",
+              "Me võtame pakkimise enda peale, et pärast kolimist jääks jõudu olulisemateks asjadeks.",
             ],
           },
         ],
@@ -581,15 +673,15 @@ export const resources = {
 
       contact: {
         title: "Võta ühendust",
-        text:
-          "Räägi meile oma kolimisest ja vaatame detailid koos läbi. Ilma surveta, ainult selged vastused.",
-        email: "hello@carepack.ee",
-        hint: "Vastame 24 tunni jooksul",
+        text: "Räägi meile oma kolimisest ja vaatame detailid koos läbi. Jäta oma telefoninumber ja helistame tagasi.",
+        hint: "Töötame tööpäevadel ja nädalavahetustel ning räägime eesti, inglise ja vene keeles.",
+        email: "info@carepack.ee",
       },
 
       terms: {
         title: "Tingimused",
-        acceptance: "Deposiidi (teenustasu esimese osa) tasumisel kinnitab klient, et on käesolevate tingimustega täielikult tutvunud, mõistab nende sisu ja nõustub nendega tingimusteta.",
+        acceptance:
+          "Deposiidi (teenustasu esimese osa) tasumisel kinnitab klient, et on käesolevate tingimustega täielikult tutvunud, mõistab nende sisu ja nõustub nendega tingimusteta.",
         sections: [
           {
             heading: "1. Teenuse sisu",
@@ -647,8 +739,7 @@ export const resources = {
       },
 
       footer: {
-        note:
-          "© 2025 Carepack · Professionaalne pakkimisteenus Tartus",
+        note: "© 2025 Carepack · Professionaalne pakkimisteenus Tartus",
       },
     },
   },
