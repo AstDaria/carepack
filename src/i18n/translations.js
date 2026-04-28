@@ -117,11 +117,11 @@ export const resources = {
         },
         m: {
           name: "Medium · 2-bedroom apartment",
-          details: "from 7 hours · 2 people · all materials · from €950",
+          details: "from 7 hours · 2 people · all materials · from €850",
         },
         l: {
           name: "Large · 3-bedroom apartment",
-          details: "from 9 hours · 2 people · all materials · from €1300",
+          details: "from 9 hours · 2 people · all materials · from €1050",
         },
         cta: "Order service",
         bannerTitle: "Got a big home?",
@@ -365,11 +365,11 @@ export const resources = {
         },
         m: {
           name: "Средний · 2-комнатная квартира",
-          details: "от 7 часов · 2 человека · все материалы · от €950",
+          details: "от 7 часов · 2 человека · все материалы · от €850",
         },
         l: {
           name: "Большой · 3-комнатная квартира",
-          details: "от 9 часов · 2 человека · все материалы · от €1300",
+          details: "от 9 часов · 2 человека · все материалы · от €1050",
         },
         cta: "Заказать услугу",
         bannerTitle: "Большой дом?",
@@ -613,11 +613,11 @@ export const resources = {
         },
         m: {
           name: "Keskmine · 2-toaline korter",
-          details: "al. 7 tundi · 2 inimest · kõik materjalid · al. €950",
+          details: "al. 7 tundi · 2 inimest · kõik materjalid · al. €850",
         },
         l: {
           name: "Suur · 3-toaline korter",
-          details: "al. 9 tundi · 2 inimest · kõik materjalid · al. €1300",
+          details: "al. 9 tundi · 2 inimest · kõik materjalid · al. €1050",
         },
         cta: "Telli teenus",
         bannerTitle: "Suur kodu?",
