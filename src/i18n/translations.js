@@ -25,8 +25,8 @@ export const resources = {
 
       banners: {
         accent: {
-          item1: "Complete packing of",
-          highlight1: "all belongings",
+          item1: "All belongings,",
+          highlight1: "complete packing",
           item2: "Materials",
           highlight2: "included",
           item3: "Weekdays &",
@@ -71,11 +71,11 @@ export const resources = {
         steps: [
           {
             title: "Message us and describe your home",
-            text: "Tell us the size of your home, what needs packing, and when works for you. No forms, no calls. Just a message.",
+            text: "Tell us the size of your home, what needs packing, and when works for you. No forms to fill out, no calls to make. Just a message.",
           },
           {
             title: "We sort out every detail in advance",
-            text: "Package, date, arrival time: all confirmed before the day. No surprises, no last-minute questions.",
+            text: "Package, date, arrival time: all confirmed before the packing day. No surprises, no last-minute questions.",
           },
           {
             title: "On the day, we're at your door",
@@ -104,24 +104,24 @@ export const resources = {
           "Animals",
         ],
         outro:
-          "Everything else we pack. Not sure about something? Write to us and we'll figure it out before the day.",
+          "Everything else we pack. Not sure about something? Write to us and we'll figure it out before the packing day.",
       },
 
       packages: {
         title: "Packages",
         intro:
-          "Choose the package that fits your home. All materials included.",
+          "Choose the package that fits your home. The package includes all materials.",
         s: {
           name: "Small · 1-bedroom apartment",
           details: "from 5 hours · 2 people · all materials · from €600",
         },
         m: {
           name: "Medium · 2-bedroom apartment",
-          details: "from 7 hours · 2 people · all materials · from €900",
+          details: "from 7 hours · 2 people · all materials · from €950",
         },
         l: {
           name: "Large · 3-bedroom apartment",
-          details: "from 9 hours · 2 people · all materials · from €1200",
+          details: "from 9 hours · 2 people · all materials · from €1300",
         },
         cta: "Order service",
         bannerTitle: "Got a big home?",
@@ -133,7 +133,7 @@ export const resources = {
         title: "Booking & Payment",
         schedule: "50% on booking · 50% after packing is done",
         description:
-          "The deposit secures your date and gives us time to prepare everything. Extra hours beyond the package are billed at €100 per hour.",
+          "The deposit secures your date and gives us time to prepare everything. Extra hours outside the package are billed at €100 per hour.",
         termsHint: "Full terms and conditions are available on the",
       },
 
@@ -142,7 +142,7 @@ export const resources = {
         items: [
           {
             heading:
-              "you're a couple and want to move <span class='hw-double'>without arguments</span>",
+              "You're a couple and want to move <span class='hw-double'>without arguments</span>",
             paragraphs: [
               "Moving almost always turns into arguments: what to keep, what to toss. When everyone's tired and time is short, even small decisions become a fight.",
               "We remove the root cause. Everything gets packed and comes with you. You can figure out what to keep later, in your new home, at your own pace.",
@@ -150,7 +150,7 @@ export const resources = {
           },
           {
             heading:
-              "you have kids who <span class='hw-dashed'>need you</span> right now, not boxes",
+              "You have kids who <span class='hw-dashed'>need you</span> right now, not boxes",
             paragraphs: [
               "With kids around, moving gets twice as hard. Every child has things they're scared to lose. Sorting through them mid-chaos only adds to the stress.",
               "Packing and looking after kids at the same time is a double load. We take care of the packing so you can stay close to your children.",
@@ -158,7 +158,7 @@ export const resources = {
           },
           {
             heading:
-              "you don't want to <span class='hw-wave'>spend ages on packing</span>",
+              "You don't want to <span class='hw-wave'>spend ages on packing</span>",
             paragraphs: [
               "Think you don't have that much stuff? Most people find three boxes just for cables.",
               "Dealing with every item on moving day adds stress when you already have plenty to handle. Smarter to move everything first, then decide calmly what stays.",
@@ -166,9 +166,9 @@ export const resources = {
           },
           {
             heading:
-              "you want to move and <span class='hw-underline'>not fall apart</span>",
+              "You want to move and <span class='hw-underline'>not fall apart</span>",
             paragraphs: [
-              "Moving is one of the most stressful moments in life. Not because something goes wrong, just because there are too many decisions in too little time.",
+              "Moving is one of the most stressful moments in life. Not because something goes wrong, just because there are too many decisions to be made in too little time.",
               "We take the packing off your hands, so you still have energy left after the move.",
             ],
           },
@@ -189,7 +189,7 @@ export const resources = {
         sections: [
           {
             heading: "1. Scope of Service",
-            text: "Carepack provides professional packing services for residential and commercial relocations. The service includes: packing materials (cardboard boxes, bubble wrap, packing paper, tape), labelling of boxes, and professional packing by two qualified team members within the time covered by the chosen package. The service is performed at the address specified by the client at the time of booking.",
+            text: "Carepack provides professional packing services for residential and commercial relocations. The service includes: packing materials (cardboard boxes, bubble wrap, packing paper, tape), labelling of boxes, and professional packing by two qualified team members within the time covered by the chosen package. The service is performed at the address specified by the client at the time of booking. To deliver the service, Carepack may engage qualified subcontractors. Carepack remains responsible for the quality of the service.",
           },
           {
             heading: "2. What Is Not Included",
@@ -213,11 +213,11 @@ export const resources = {
           },
           {
             heading: "7. Client Responsibilities",
-            text: "The client is responsible for: ensuring unobstructed access to the premises at the agreed time; informing Carepack in advance of any fragile, valuable, or unusual items requiring special handling; removing or securing cash, jewellery, documents, and other valuables before the team arrives; ensuring that the premises comply with basic health and safety requirements. Failure to fulfil these obligations may result in refusal of service without refund of the deposit.",
+            text: "The client is responsible for: ensuring unobstructed access to the premises at the agreed time; ensuring vehicle access to the address for unloading packing materials; informing Carepack in advance of any fragile, valuable, or unusual items requiring special handling; removing or securing cash, jewellery, documents, and other valuables before the team arrives; ensuring that the premises comply with basic health and safety requirements. Failure to fulfil these obligations may result in refusal of service without refund of the deposit.",
           },
           {
             heading: "8. Liability for Belongings",
-            text: "Carepack takes all reasonable and professional care in handling and packing belongings. We are not liable for: damage, defects, or deterioration existing prior to the commencement of packing; items packed by the client or a third party; fragile, antique, or high-value items not flagged to the team in advance; items lost or damaged during transport (which is outside our scope of service); valuables (cash, jewellery, documents) left in the premises during the service. Carepack's total liability in any claim is limited to the amount paid for the service.",
+            text: "Before work begins, Carepack specialists may photograph the condition of items and premises as documentary evidence of their state at the start of the service. Carepack takes all reasonable and professional care in handling and packing belongings. We are not liable for: damage, defects, or deterioration existing prior to the commencement of packing; items packed by the client or a third party; fragile, antique, or high-value items not flagged to the team in advance; items lost or damaged during transport (which is outside our scope of service); valuables (cash, jewellery, documents) left in the premises during the service. Carepack's total liability in any claim is limited to the amount paid for the service.",
           },
           {
             heading: "9. Force Majeure",
@@ -229,7 +229,7 @@ export const resources = {
           },
           {
             heading: "11. Personal Data",
-            text: "Carepack processes the client's personal data (name, contact details, address) solely for the purpose of providing the agreed service, managing bookings, and fulfilling legal obligations. Data is not shared with third parties except where required by law or necessary to deliver the service. The client has the right to request access to, correction of, or deletion of their data at any time.",
+            text: "Carepack processes the client's personal data (name, contact details, address) solely for the purpose of providing the agreed service, managing bookings, and fulfilling legal obligations. Data is not shared with third parties except where required by law or necessary to deliver the service. The client has the right to request access to, correction of, or deletion of their data at any time. Carepack may photograph the packing process for marketing purposes (website, social media). Faces, personal belongings and identifying details are published only with the client's explicit written consent. The client may opt out of any photography by notifying Carepack at the time of booking.",
           },
           {
             heading: "12. Governing Law and Disputes",
@@ -274,8 +274,8 @@ export const resources = {
 
       banners: {
         accent: {
-          item1: "Полная упаковка",
-          highlight1: "всех вещей",
+          item1: "Все вещи —",
+          highlight1: "полная упаковка",
           item2: "Материалы",
           highlight2: "включены",
           item3: "Будни и",
@@ -320,11 +320,11 @@ export const resources = {
         steps: [
           {
             title: "Напишите нам и опишите жильё",
-            text: "Расскажите, сколько комнат, что нужно упаковать и когда удобно. Никаких форм, никаких звонков. Просто напишите.",
+            text: "Расскажите, сколько комнат, что нужно упаковать и когда удобно. Не нужно заполнять формы, не нужно звонить. Просто напишите.",
           },
           {
             title: "Мы согласуем всё до последней детали",
-            text: "Пакет, дата, время приезда: всё подтверждается заранее. Никаких сюрпризов и вопросов в последний момент.",
+            text: "Пакет, дата, время приезда: всё подтверждается до дня упаковки. Никаких сюрпризов и вопросов в последний момент.",
           },
           {
             title: "В день переезда мы уже у вашей двери",
@@ -353,23 +353,23 @@ export const resources = {
           "Животных",
         ],
         outro:
-          "Всё остальное упакуем. Не уверены насчёт какой-то вещи? Напишите нам, разберёмся до переезда.",
+          "Всё остальное упакуем. Не уверены насчёт какой-то вещи? Напишите нам, разберёмся до дня упаковки.",
       },
 
       packages: {
         title: "Пакеты",
-        intro: "Выберите пакет под размер вашего дома. Все материалы включены.",
+        intro: "Выберите пакет под размер вашего дома. Пакет включает все материалы.",
         s: {
           name: "Малый · 1-комнатная квартира",
           details: "от 5 часов · 2 человека · все материалы · от €600",
         },
         m: {
           name: "Средний · 2-комнатная квартира",
-          details: "от 7 часов · 2 человека · все материалы · от €900",
+          details: "от 7 часов · 2 человека · все материалы · от €950",
         },
         l: {
           name: "Большой · 3-комнатная квартира",
-          details: "от 9 часов · 2 человека · все материалы · от €1200",
+          details: "от 9 часов · 2 человека · все материалы · от €1300",
         },
         cta: "Заказать услугу",
         bannerTitle: "Большой дом?",
@@ -380,7 +380,7 @@ export const resources = {
         title: "Бронирование и оплата",
         schedule: "50% при бронировании · 50% после завершения упаковки",
         description:
-          "Депозит фиксирует дату и даёт нам время всё подготовить. Каждый дополнительный час сверх пакета оплачивается по ставке 100 € в час.",
+          "Депозит фиксирует дату и даёт нам время всё подготовить. Каждый дополнительный час вне пакета оплачивается по ставке 100 € в час.",
         termsHint: "Полные условия на странице",
       },
 
@@ -389,7 +389,7 @@ export const resources = {
         items: [
           {
             heading:
-              "вы пара и хотите переехать <span class='hw-double'>без ссор</span>",
+              "Вы пара и хотите переехать <span class='hw-double'>без ссор</span>",
             paragraphs: [
               "Переезд почти всегда превращается в споры: что взять, что выбросить. Когда все устали, даже простые решения становятся поводом поругаться.",
               "Мы убираем причину конфликтов: всё упаковывается и едет с вами. Разберётесь в новом доме, спокойно и без давления.",
@@ -397,7 +397,7 @@ export const resources = {
           },
           {
             heading:
-              "у вас дети, и им сейчас <span class='hw-dashed'>нужны вы</span>, а не коробки",
+              "У вас дети, и им сейчас <span class='hw-dashed'>нужны вы</span>, а не коробки",
             paragraphs: [
               "С детьми переезд вдвойне тяжелее. Каждый ребёнок боится потерять свои вещи, а разбирать их в суматохе только добавляет тревоги.",
               "Паковать вещи и следить за детьми одновременно слишком тяжело. Мы берём упаковку на себя, чтобы вы могли быть рядом с детьми.",
@@ -405,7 +405,7 @@ export const resources = {
           },
           {
             heading:
-              "вам жаль <span class='hw-wave'>тратить уйму времени</span> на упаковку",
+              "Вам жаль <span class='hw-wave'>тратить уйму времени</span> на упаковку",
             paragraphs: [
               "Думаете, что вещей немного? Большинство находит три коробки только с проводами.",
               "Разбираться с каждой вещью прямо в день переезда создаёт лишний стресс. Умнее перевезти всё сразу, а в новом месте решить, что оставить.",
@@ -413,9 +413,9 @@ export const resources = {
           },
           {
             heading:
-              "хотите переехать и <span class='hw-underline'>не сломаться</span>",
+              "Хотите переехать и <span class='hw-underline'>не сломаться</span>",
             paragraphs: [
-              "Переезд входит в число самых стрессовых событий. Не потому что что-то идёт не так, а просто слишком много решений за слишком короткое время.",
+              "Переезд входит в число самых стрессовых событий. Не потому что что-то идёт не так, а просто нужно принять слишком много решений за слишком короткое время.",
               "Мы берём упаковку на себя, чтобы после переезда у вас ещё оставались силы.",
             ],
           },
@@ -436,7 +436,7 @@ export const resources = {
         sections: [
           {
             heading: "1. Предмет договора и состав услуги",
-            text: "Carepack оказывает услуги профессиональной упаковки вещей при жилых и коммерческих переездах. В услугу входят: упаковочные материалы (картонные коробки, пузырчатая плёнка, упаковочная бумага, скотч), маркировка коробок, профессиональная упаковка вещей двумя квалифицированными специалистами в пределах времени, предусмотренного выбранным пакетом. Услуга оказывается по адресу, указанному клиентом при бронировании.",
+            text: "Carepack оказывает услуги профессиональной упаковки вещей при жилых и коммерческих переездах. В услугу входят: упаковочные материалы (картонные коробки, пузырчатая плёнка, упаковочная бумага, скотч), маркировка коробок, профессиональная упаковка вещей двумя квалифицированными специалистами в пределах времени, предусмотренного выбранным пакетом. Услуга оказывается по адресу, указанному клиентом при бронировании. Для оказания услуги Carepack вправе привлекать квалифицированных субподрядчиков. Ответственность за качество услуги остаётся на стороне Carepack.",
           },
           {
             heading: "2. Что не входит в услугу",
@@ -460,11 +460,11 @@ export const resources = {
           },
           {
             heading: "7. Обязанности клиента",
-            text: "Клиент обязан: обеспечить беспрепятственный доступ к помещению в согласованное время; заблаговременно сообщить Carepack о хрупких, ценных или нестандартных предметах, требующих особого обращения; убрать или надёжно сохранить наличные деньги, ювелирные украшения, документы и иные ценности до прихода специалистов; обеспечить соответствие помещения базовым требованиям охраны труда и техники безопасности. Невыполнение этих обязательств может повлечь отказ в оказании услуги без возврата депозита.",
+            text: "Клиент обязан: обеспечить беспрепятственный доступ к помещению в согласованное время; обеспечить возможность подъезда к адресу для выгрузки упаковочных материалов; заблаговременно сообщить Carepack о хрупких, ценных или нестандартных предметах, требующих особого обращения; убрать или надёжно сохранить наличные деньги, ювелирные украшения, документы и иные ценности до прихода специалистов; обеспечить соответствие помещения базовым требованиям охраны труда и техники безопасности. Невыполнение этих обязательств может повлечь отказ в оказании услуги без возврата депозита.",
           },
           {
             heading: "8. Ответственность за вещи",
-            text: "Carepack принимает все разумные и профессиональные меры при обращении с вещами клиента и их упаковке. Мы не несём ответственности за: повреждения, дефекты или износ, существовавшие до начала упаковки; вещи, упакованные клиентом или третьими лицами; хрупкие, антикварные или высокоценные предметы, о которых клиент не предупредил заблаговременно; вещи, утраченные или повреждённые при транспортировке (которая не входит в объём наших услуг); ценности (наличные, украшения, документы), оставленные в помещении во время оказания услуги. Общая ответственность Carepack по любому требованию ограничена суммой, уплаченной за услугу.",
+            text: "До начала работ специалисты Carepack вправе производить фотофиксацию состояния вещей и помещения в целях документального подтверждения их состояния на момент начала услуги. Carepack принимает все разумные и профессиональные меры при обращении с вещами клиента и их упаковке. Мы не несём ответственности за: повреждения, дефекты или износ, существовавшие до начала упаковки; вещи, упакованные клиентом или третьими лицами; хрупкие, антикварные или высокоценные предметы, о которых клиент не предупредил заблаговременно; вещи, утраченные или повреждённые при транспортировке (которая не входит в объём наших услуг); ценности (наличные, украшения, документы), оставленные в помещении во время оказания услуги. Общая ответственность Carepack по любому требованию ограничена суммой, уплаченной за услугу.",
           },
           {
             heading: "9. Форс-мажор",
@@ -476,7 +476,7 @@ export const resources = {
           },
           {
             heading: "11. Персональные данные",
-            text: "Carepack обрабатывает персональные данные клиента (имя, контактные данные, адрес) исключительно в целях оказания согласованной услуги, управления бронированиями и исполнения юридических обязательств. Данные не передаются третьим лицам, за исключением случаев, предусмотренных законом или необходимых для оказания услуги. Клиент вправе в любое время запросить доступ к своим данным, их исправление или удаление.",
+            text: "Carepack обрабатывает персональные данные клиента (имя, контактные данные, адрес) исключительно в целях оказания согласованной услуги, управления бронированиями и исполнения юридических обязательств. Данные не передаются третьим лицам, за исключением случаев, предусмотренных законом или необходимых для оказания услуги. Клиент вправе в любое время запросить доступ к своим данным, их исправление или удаление. Carepack может фотографировать процесс упаковки в маркетинговых целях (сайт, социальные сети). Личные вещи, лица и идентифицирующие данные клиента публикуются только с его явного письменного согласия. Клиент вправе отказаться от съёмки, уведомив об этом при бронировании.",
           },
           {
             heading: "12. Применимое право и разрешение споров",
@@ -521,8 +521,8 @@ export const resources = {
 
       banners: {
         accent: {
-          item1: "Täielik pakkimine",
-          highlight1: "kõigist asjadest",
+          item1: "Kõikide asjade",
+          highlight1: "täielik pakkimine",
           item2: "Materjalid",
           highlight2: "kaasas",
           item3: "Tööpäevad ja",
@@ -536,7 +536,7 @@ export const resources = {
         },
         unpack: {
           title: "Kolite Tartus või lähiümbruses?",
-          text: "Kui kolite Tartu piires või lähedal asuvas piirkonnas, pakume ka lahtipakkimist teie uues kodus. Paigutame kõik asjalikult ära, et saaksite esimesest päevast alates ennast kodus tunda.",
+          text: "Kui kolite Tartu piires või lähedal asuvas piirkonnas, pakume ka lahtipakkimist teie uues kodus. Paigutame kõik asjalikult ära, et saaksite esimesest päevast alates ennast koduselt tunda.",
           cta: "Küsige lahtipakkimise kohta",
         },
       },
@@ -550,7 +550,7 @@ export const resources = {
 
         solutionTitle: "Me võtame kõik",
         solutionText:
-          "Võtame kogu pakkimise enda peale. Tuba-tuba, õrnad esemed hoolikalt, iga kast märgistatult. Ilma kiirustamata.",
+          "Võtame kogu pakkimise enda peale. Toa haaval, õrnad esemed hoolikalt, iga kast märgistatult. Ilma kiirustamata.",
 
         serviceTitle: "Sa lihtsalt hingad",
         serviceText:
@@ -567,11 +567,11 @@ export const resources = {
         steps: [
           {
             title: "Kirjuta meile ja kirjelda oma kodu",
-            text: "Ütle meile kodu suurus, mida on vaja pakkida ja millal sobib. Ei vorme, ei kõnesid. Lihtsalt kirjuta.",
+            text: "Ütle meile kodu suurus, mida on vaja pakkida ja millal sobib. Pole vaja täita vorme, pole vaja helistada. Lihtsalt kirjuta.",
           },
           {
             title: "Lepime kõik detailid eelnevalt kokku",
-            text: "Pakett, kuupäev, saabumisaeg: kõik kinnitatakse enne päeva. Üllatusi ei tule, küsimusi viimasel hetkel ka mitte.",
+            text: "Pakett, kuupäev, saabumisaeg: kõik kinnitatakse enne pakkimise päeva. Üllatusi ei tule, küsimusi viimasel hetkel ka mitte.",
           },
           {
             title: "Kolimispäeval oleme sinu ukse taga",
@@ -596,28 +596,28 @@ export const resources = {
           "Kommunikatsioonidega ühendatud kodutehnikat",
           "Väga raskeid või ebatavalisi esemeid",
           "Ohtlikke aineid, vedelikke ja kemikaale",
-          "Taimed",
-          "Loomad",
+          "Taimi",
+          "Loomi",
         ],
         outro:
-          "Kõike muud pakime hea meelega. Pole kindel mõne eseme osas? Kirjuta meile ja arutame enne päeva läbi.",
+          "Kõike muud pakime hea meelega. Pole kindel mõne eseme osas? Kirjuta meile ja enne pakkimise päeva arutame läbi.",
       },
 
       packages: {
         title: "Paketid",
         intro:
-          "Vali pakett, mis sobib sinu kodu suurusega. Kõik materjalid kaasas.",
+          "Vali pakett, mis sobib sinu kodu suurusega. Pakett sisaldab kõiki materjale.",
         s: {
           name: "Väike · 1-toaline korter",
           details: "al. 5 tundi · 2 inimest · kõik materjalid · al. €600",
         },
         m: {
           name: "Keskmine · 2-toaline korter",
-          details: "al. 7 tundi · 2 inimest · kõik materjalid · al. €900",
+          details: "al. 7 tundi · 2 inimest · kõik materjalid · al. €950",
         },
         l: {
           name: "Suur · 3-toaline korter",
-          details: "al. 9 tundi · 2 inimest · kõik materjalid · al. €1200",
+          details: "al. 9 tundi · 2 inimest · kõik materjalid · al. €1300",
         },
         cta: "Telli teenus",
         bannerTitle: "Suur kodu?",
@@ -629,7 +629,7 @@ export const resources = {
         title: "Broneerimine ja tasumine",
         schedule: "50% broneerimisel · 50% pärast pakkimise lõppu",
         description:
-          "Deposiit kinnitab kuupäeva ja annab meile aega kõik ette valmistada. Lisatunnid üle paketi tasutakse 100 € tunnis.",
+          "Deposiit kinnitab kuupäeva ja annab meile aega kõik ette valmistada. Paketivälised lisatunnid tasutakse 100 € tunnis.",
         termsHint: "Täielikud tingimused leiad",
       },
 
@@ -638,7 +638,7 @@ export const resources = {
         items: [
           {
             heading:
-              "olete paar ja tahate kolida <span class='hw-double'>ilma tülideta</span>",
+              "Olete paar ja tahate kolida <span class='hw-double'>ilma tülideta</span>",
             paragraphs: [
               "Kolimine muutub peaaegu alati vaidluseks: mida võtta, mida ära visata. Kui kõik on väsinud, ajab isegi lihtne otsus tülli.",
               "Me eemaldame konflikti põhjuse: kõik pakitakse ja läheb kaasa. Uues kodus saab rahulikult otsustada, mis jääb.",
@@ -646,15 +646,15 @@ export const resources = {
           },
           {
             heading:
-              "teil on lapsed, kes vajavad praegu <span class='hw-dashed'>teid</span>, mitte karpe",
+              "Teil on lapsed, kes vajavad praegu <span class='hw-dashed'>teid</span>, mitte karpe",
             paragraphs: [
-              "Lastega kolis kaks korda raskem. Igal lapsel on asjad, millest on hirm lahkuda, ja nende sorteerimine segaduses lisab ainult ärevust.",
+              "Lastega on kolimine kaks korda raskem. Igal lapsel on asjad, millest on hirm lahkuda, ja nende sorteerimine segaduses lisab ainult ärevust.",
               "Laste eest hoolt kanda ja samal ajal pakkida on topeltkoormus. Me võtame pakkimise enda peale, et saaksite lastega koos olla.",
             ],
           },
           {
             heading:
-              "kahju raisata pakkimisele <span class='hw-wave'>hirmsalt palju aega</span>",
+              "Kahju raisata pakkimisele <span class='hw-wave'>hirmsalt palju aega</span>",
             paragraphs: [
               "Arvate, et asju on vähe? Enamik avastab kolm kasti ainult juhtmeid.",
               "Iga asjaga kolimispäeval tegeleda on lisastress. Mõistlikum on kõik ära kolida, siis uues kohas rahulikult otsustada.",
@@ -662,9 +662,9 @@ export const resources = {
           },
           {
             heading:
-              "tahate kolida ja <span class='hw-underline'>ilma läbipõlemiseta</span>",
+              "Tahate kolida ja <span class='hw-underline'>ilma läbipõlemiseta</span>",
             paragraphs: [
-              "Kolimine on üks stressirohkemaid hetki. Mitte sellepärast, et midagi läheks valesti, vaid lihtsalt liiga palju otsuseid liiga lühikese aja jooksul.",
+              "Kolimine on üks stressirohkemaid hetki. Mitte sellepärast, et midagi läheks valesti, vaid lihtsalt on vaja teha liiga palju otsuseid liiga lühikese aja jooksul.",
               "Me võtame pakkimise enda peale, et pärast kolimist jääks jõudu olulisemateks asjadeks.",
             ],
           },
@@ -685,7 +685,7 @@ export const resources = {
         sections: [
           {
             heading: "1. Teenuse sisu",
-            text: "Carepack osutab professionaalseid pakkimisteenuseid elamu- ja äriruumide kolimise puhul. Teenus sisaldab: pakkematerjale (pappkastid, õhumulli kile, pakkimispaber, teip), kastide märgistamist ja professionaalset pakkimist kahe kvalifitseeritud meeskonnaliikme poolt valitud paketi ajalimiidi piires. Teenust osutatakse kliendi poolt broneeringul märgitud aadressil.",
+            text: "Carepack osutab professionaalseid pakkimisteenuseid elamu- ja äriruumide kolimise puhul. Teenus sisaldab: pakkematerjale (pappkastid, õhumulli kile, pakkimispaber, teip), kastide märgistamist ja professionaalset pakkimist kahe kvalifitseeritud meeskonnaliikme poolt valitud paketi ajalimiidi piires. Teenust osutatakse kliendi poolt broneeringul märgitud aadressil. Teenuse osutamiseks võib Carepack kaasata kvalifitseeritud alltöövõtjaid. Vastutus teenuse kvaliteedi eest jääb Carepackile.",
           },
           {
             heading: "2. Mida teenus ei sisalda",
@@ -709,11 +709,11 @@ export const resources = {
           },
           {
             heading: "7. Kliendi kohustused",
-            text: "Klient on kohustatud: tagama takistusteta juurdepääsu ruumidele kokkulepitud ajal; teavitama Carepacki eelnevalt hapratest, väärtuslikest või ebatavalistest esemetest, mis vajavad erilist käsitsemist; eemaldama või turvaliselt hoidma sularaha, ehted, dokumendid ja muud väärtesemed enne meeskonna saabumist; tagama, et ruumid vastavad tööohutuse põhinõuetele. Nende kohustuste täitmata jätmine võib kaasa tuua teenuse osutamisest keeldumise deposiiti tagastamata.",
+            text: "Klient on kohustatud: tagama takistusteta juurdepääsu ruumidele kokkulepitud ajal; tagama sõidukite juurdepääsu aadressile pakkematerjalide mahalaadimiseks; teavitama Carepacki eelnevalt hapratest, väärtuslikest või ebatavalistest esemetest, mis vajavad erilist käsitsemist; eemaldama või turvaliselt hoidma sularaha, ehted, dokumendid ja muud väärtesemed enne meeskonna saabumist; tagama, et ruumid vastavad tööohutuse põhinõuetele. Nende kohustuste täitmata jätmine võib kaasa tuua teenuse osutamisest keeldumise deposiiti tagastamata.",
           },
           {
             heading: "8. Vastutus asjade eest",
-            text: "Carepack võtab kõik mõistlikud ja professionaalsed ettevaatusabinõud kliendi asjade käsitsemisel ja pakkimisel. Me ei vastuta: kahjustuste, defektide ega kulumise eest, mis eksisteerisid enne pakkimise algust; kliendi või kolmandate isikute pakitud esemete eest; haprate, antiikesemete või kõrge väärtusega esemete eest, millest kliент ei teavitanud eelnevalt; transpordil kadunud või kahjustatud asjade eest (mis ei kuulu meie teenuste hulka); väärtesemete (sularaha, ehted, dokumendid) eest, mis jäeti ruumidesse teenuse osutamise ajal. Carepacki kogu vastutus mis tahes nõude alusel on piiratud teenuse eest tasutud summaga.",
+            text: "Enne töö algust võivad Carepacki spetsialistid fotografeerida esemete ja ruumide seisukorda dokumentaalseks tõendiks nende seisukorra kohta teenuse alguses. Carepack võtab kõik mõistlikud ja professionaalsed ettevaatusabinõud kliendi asjade käsitsemisel ja pakkimisel. Me ei vastuta: kahjustuste, defektide ega kulumise eest, mis eksisteerisid enne pakkimise algust; kliendi või kolmandate isikute pakitud esemete eest; haprate, antiikesemete või kõrge väärtusega esemete eest, millest kliент ei teavitanud eelnevalt; transpordil kadunud või kahjustatud asjade eest (mis ei kuulu meie teenuste hulka); väärtesemete (sularaha, ehted, dokumendid) eest, mis jäeti ruumidesse teenuse osutamise ajal. Carepacki kogu vastutus mis tahes nõude alusel on piiratud teenuse eest tasutud summaga.",
           },
           {
             heading: "9. Vääramatu jõud",
@@ -725,7 +725,7 @@ export const resources = {
           },
           {
             heading: "11. Isikuandmed",
-            text: "Carepack töötleb kliendi isikuandmeid (nimi, kontaktandmed, aadress) ainult kokkulepitud teenuse osutamise, broneeringute haldamise ja juriidiliste kohustuste täitmise eesmärgil. Andmeid ei edastata kolmandatele isikutele, välja arvatud seadusega nõutud juhtudel või teenuse osutamiseks vajalikul määral. Kliendil on igal ajal õigus taotleda juurdepääsu oma andmetele, nende parandamist või kustutamist.",
+            text: "Carepack töötleb kliendi isikuandmeid (nimi, kontaktandmed, aadress) ainult kokkulepitud teenuse osutamise, broneeringute haldamise ja juriidiliste kohustuste täitmise eesmärgil. Andmeid ei edastata kolmandatele isikutele, välja arvatud seadusega nõutud juhtudel või teenuse osutamiseks vajalikul määral. Kliendil on igal ajal õigus taotleda juurdepääsu oma andmetele, nende parandamist või kustutamist. Carepack võib pakkimisprotsessi fotografeerida turunduslikel eesmärkidel (veebisait, sotsiaalmeedia). Kliendi nägusid, isiklikke asju ja tuvastamisandmeid avaldatakse ainult kliendi selgesõnalise kirjaliku nõusolekuga. Klient võib loobuda igasugusest fotografeerimisest, teatades sellest broneeringul.",
           },
           {
             heading: "12. Kohaldatav õigus ja vaidluste lahendamine",
