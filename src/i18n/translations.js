@@ -58,7 +58,7 @@ export const resources = {
 
         serviceTitle: "You just breathe",
         serviceText:
-          "Two people arrive with all materials and pack your home from start to finish. Everything ready for the move.",
+          "Neat and attentive — we don't just pack, we talk and support you every step of the way.",
       },
 
       process: {
@@ -307,7 +307,7 @@ export const resources = {
 
         serviceTitle: "Вы просто выдыхаете",
         serviceText:
-          "Двое приезжают со всеми материалами и упаковывают дом от начала до конца. Всё готово к машине.",
+          "Аккуратные женщины, которые не просто упакуют, но и поговорят и поддержат.",
       },
 
       process: {
@@ -554,7 +554,7 @@ export const resources = {
 
         serviceTitle: "Sa lihtsalt hingad",
         serviceText:
-          "Kaks inimest saabuvad kõigi materjalidega ja pakivad kodu algusest lõpuni. Kõik on kolimiseks valmis.",
+          "Korralikud naised, kes mitte ainult ei paki, vaid ka räägivad ja toetavad.",
       },
 
       process: {
