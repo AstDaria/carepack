@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { useCallback, useEffect, useState } from "react";
+import { useEffect } from "react";
 import LanguageSwitch from "./components/LanguageSwitch.jsx";
 
 const icon = (name) => `/icons/${name}.png`;
@@ -22,7 +22,7 @@ const icons = {
   eco: icon("leaf"),
 };
 
-function AnchorNav({ onOpenTerms, onLinkClick, onBrandClick }) {
+function AnchorNav({ baseHref = "" }) {
   const { t } = useTranslation();
   const items = [
     ["about", t("nav.about")],
@@ -35,34 +35,13 @@ function AnchorNav({ onOpenTerms, onLinkClick, onBrandClick }) {
 
   return (
     <nav className="nav" aria-label="On-page navigation">
-      <a
-        className="nav__brand"
-        href="/"
-        onClick={(e) => {
-          e.preventDefault();
-          onBrandClick
-            ? onBrandClick()
-            : window.scrollTo({ top: 0, behavior: "smooth" });
-        }}
-      >
+      <a className="nav__brand" href="/">
         {t("brand.name")}
       </a>
 
       <div className="nav__links">
         {items.map(([href, label]) => (
-          <a
-            key={href}
-            className="nav__link"
-            href={`#${href}`}
-            onClick={
-              onLinkClick
-                ? (e) => {
-                    e.preventDefault();
-                    onLinkClick(href);
-                  }
-                : undefined
-            }
-          >
+          <a key={href} className="nav__link" href={`${baseHref}#${href}`}>
             {label}
           </a>
         ))}
@@ -75,7 +54,7 @@ function AnchorNav({ onOpenTerms, onLinkClick, onBrandClick }) {
   );
 }
 
-function TermsPage({ onOpenTerms, onGoBack }) {
+function TermsPage() {
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -84,11 +63,7 @@ function TermsPage({ onOpenTerms, onGoBack }) {
 
   return (
     <div className="app">
-      <AnchorNav
-        onOpenTerms={onOpenTerms}
-        onLinkClick={(href) => onGoBack(href)}
-        onBrandClick={() => onGoBack(null)}
-      />
+      <AnchorNav baseHref="/" />
 
       <main className="main">
         <section className="terms">
@@ -115,14 +90,7 @@ function TermsPage({ onOpenTerms, onGoBack }) {
         <div className="footer__container">
           <div className="footer__brand">{t("brand.name")}</div>
           <div className="footer__note">{t("footer.note")}</div>
-          <a
-            className="footer__terms-link"
-            href="#terms"
-            onClick={(e) => {
-              e.preventDefault();
-              onOpenTerms();
-            }}
-          >
+          <a className="footer__terms-link" href="/terms">
             {t("nav.terms")}
           </a>
         </div>
@@ -131,28 +99,8 @@ function TermsPage({ onOpenTerms, onGoBack }) {
   );
 }
 
-export default function App() {
+function MainPage() {
   const { t } = useTranslation();
-  const [page, setPage] = useState("main");
-  const [pendingScroll, setPendingScroll] = useState(null);
-
-  const openTerms = useCallback(() => {
-    setPage("terms");
-    window.scrollTo(0, 0);
-  }, []);
-  const goBack = useCallback((hash) => {
-    setPage("main");
-    if (hash) setPendingScroll(hash);
-    else window.scrollTo(0, 0);
-  }, []);
-
-  useEffect(() => {
-    if (page === "main" && pendingScroll) {
-      const el = document.getElementById(pendingScroll);
-      if (el) el.scrollIntoView({ behavior: "smooth" });
-      setPendingScroll(null);
-    }
-  }, [page, pendingScroll]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -170,13 +118,9 @@ export default function App() {
     return () => observer.disconnect();
   }, []);
 
-  if (page === "terms") {
-    return <TermsPage onOpenTerms={openTerms} onGoBack={goBack} />;
-  }
-
   return (
     <div className="app">
-      <AnchorNav onOpenTerms={openTerms} />
+      <AnchorNav />
 
       <header className="hero">
         <div className="hero__container">
@@ -234,7 +178,11 @@ export default function App() {
                 <p className="about__text">{t("about.stressText")}</p>
               </div>
               <div className="about__item">
-                <img className="about__icon" src={icons.aboutSolution} alt="" />
+                <img
+                  className="about__icon"
+                  src={icons.aboutSolution}
+                  alt=""
+                />
                 <h3 className="about__title">{t("about.solutionTitle")}</h3>
                 <p className="about__text">{t("about.solutionText")}</p>
               </div>
@@ -394,9 +342,9 @@ export default function App() {
           <p className="payment__description">{t("payment.description")}</p>
           <p className="payment__terms-hint">
             {t("payment.termsHint")}{" "}
-            <button className="payment__terms-link" onClick={openTerms}>
+            <a className="payment__terms-link" href="/terms">
               {t("nav.terms")}
-            </button>
+            </a>
           </p>
         </div>
 
@@ -504,18 +452,18 @@ export default function App() {
         <div className="footer__container">
           <div className="footer__brand">{t("brand.name")}</div>
           <div className="footer__note">{t("footer.note")}</div>
-          <a
-            className="footer__terms-link"
-            href="#terms"
-            onClick={(e) => {
-              e.preventDefault();
-              openTerms();
-            }}
-          >
+          <a className="footer__terms-link" href="/terms">
             {t("nav.terms")}
           </a>
         </div>
       </footer>
     </div>
   );
+}
+
+export default function App({ initialPage = "main" }) {
+  if (initialPage === "terms") {
+    return <TermsPage />;
+  }
+  return <MainPage />;
 }
