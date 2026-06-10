@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import LanguageSwitch from "./components/LanguageSwitch.jsx";
 
 const icon = (name) => `/icons/${name}.png`;
@@ -96,6 +96,117 @@ function TermsPage() {
         </div>
       </footer>
     </div>
+  );
+}
+
+function ContactForm() {
+  const { t } = useTranslation();
+  const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+    company: "", // honeypot
+  });
+  const [status, setStatus] = useState("idle"); // idle | sending | success | error
+
+  const onChange = (e) =>
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    if (status === "sending") return;
+    setStatus("sending");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error("request failed");
+      setStatus("success");
+      setForm({ name: "", phone: "", email: "", message: "", company: "" });
+    } catch {
+      setStatus("error");
+    }
+  };
+
+  if (status === "success") {
+    return (
+      <p className="contact__status contact__status--success" role="status">
+        {t("contact.form.success")}
+      </p>
+    );
+  }
+
+  return (
+    <form className="contact__form" onSubmit={onSubmit} noValidate>
+      <div className="contact__form-row">
+        <input
+          className="contact__input"
+          type="text"
+          name="name"
+          value={form.name}
+          onChange={onChange}
+          placeholder={t("contact.form.name")}
+          aria-label={t("contact.form.name")}
+          required
+        />
+        <input
+          className="contact__input"
+          type="tel"
+          name="phone"
+          value={form.phone}
+          onChange={onChange}
+          placeholder={t("contact.form.phone")}
+          aria-label={t("contact.form.phone")}
+          required
+        />
+      </div>
+      <input
+        className="contact__input"
+        type="email"
+        name="email"
+        value={form.email}
+        onChange={onChange}
+        placeholder={t("contact.form.email")}
+        aria-label={t("contact.form.email")}
+      />
+      <textarea
+        className="contact__input contact__textarea"
+        name="message"
+        value={form.message}
+        onChange={onChange}
+        placeholder={t("contact.form.message")}
+        aria-label={t("contact.form.message")}
+        rows={4}
+      />
+      {/* Honeypot — hidden from users, catches bots */}
+      <input
+        className="contact__honeypot"
+        type="text"
+        name="company"
+        value={form.company}
+        onChange={onChange}
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+      />
+      <button
+        className="button button--primary contact__submit"
+        type="submit"
+        disabled={status === "sending"}
+      >
+        {status === "sending"
+          ? t("contact.form.sending")
+          : t("contact.form.submit")}
+      </button>
+      {status === "error" && (
+        <p className="contact__status contact__status--error" role="alert">
+          {t("contact.form.error")}
+        </p>
+      )}
+    </form>
   );
 }
 
@@ -435,8 +546,12 @@ function MainPage() {
             <h2 className="contact__title">{t("contact.title")}</h2>
             <p className="contact__text">{t("contact.text")}</p>
             <p className="contact__hint">{t("contact.hint")}</p>
+            <ContactForm />
             <div className="contact__actions">
-              <span className="contact__email">{t("contact.email")}</span>
+              <span className="contact__or">{t("contact.or")}</span>
+              <a className="contact__email" href={`mailto:${t("contact.email")}`}>
+                {t("contact.email")}
+              </a>
             </div>
             <img
               className="contact__illustration"

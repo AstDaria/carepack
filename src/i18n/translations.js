@@ -180,6 +180,19 @@ export const resources = {
         text: "Tell us about your move and we'll sort out the details together. Leave your phone number and we'll call you back.",
         hint: "We work weekdays and weekends, and speak Estonian, English and Russian.",
         email: "info@carepack.ee",
+        or: "or email us at",
+        form: {
+          name: "Your name",
+          phone: "Phone number",
+          email: "Email (optional)",
+          message: "Tell us about your move (optional)",
+          submit: "Send request",
+          sending: "Sending…",
+          success:
+            "Thank you! We've received your request and will get back to you soon.",
+          error:
+            "Something went wrong. Please try again or email us directly.",
+        },
       },
 
       terms: {
@@ -427,6 +440,19 @@ export const resources = {
         text: "Расскажите о своём переезде — разберём всё вместе. Оставьте номер телефона, и мы перезвоним.",
         hint: "Работаем в будни и выходные, говорим на эстонском, английском и русском.",
         email: "info@carepack.ee",
+        or: "или напишите нам на",
+        form: {
+          name: "Ваше имя",
+          phone: "Номер телефона",
+          email: "Email (необязательно)",
+          message: "Расскажите о переезде (необязательно)",
+          submit: "Отправить заявку",
+          sending: "Отправляем…",
+          success:
+            "Спасибо! Мы получили вашу заявку и скоро свяжемся с вами.",
+          error:
+            "Что-то пошло не так. Попробуйте ещё раз или напишите нам напрямую.",
+        },
       },
 
       terms: {
@@ -676,6 +702,19 @@ export const resources = {
         text: "Räägi meile oma kolimisest ja vaatame detailid koos läbi. Jäta oma telefoninumber ja helistame tagasi.",
         hint: "Töötame tööpäevadel ja nädalavahetustel ning räägime eesti, inglise ja vene keeles.",
         email: "info@carepack.ee",
+        or: "või kirjuta meile aadressil",
+        form: {
+          name: "Sinu nimi",
+          phone: "Telefoninumber",
+          email: "E-post (valikuline)",
+          message: "Räägi meile oma kolimisest (valikuline)",
+          submit: "Saada päring",
+          sending: "Saadan…",
+          success:
+            "Aitäh! Saime sinu päringu kätte ja võtame peagi ühendust.",
+          error:
+            "Midagi läks valesti. Proovi uuesti või kirjuta meile otse.",
+        },
       },
 
       terms: {
