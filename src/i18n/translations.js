@@ -179,6 +179,7 @@ export const resources = {
         title: "Get in touch",
         text: "Tell us about your move and we'll sort out the details together. Leave your phone number and we'll call you back.",
         hint: "We work weekdays and weekends, and speak Estonian, English and Russian.",
+        reply: "We reply within 24 hours.",
         email: "info@carepack.ee",
         or: "or email us at",
         form: {
@@ -439,6 +440,7 @@ export const resources = {
         title: "Связаться с нами",
         text: "Расскажите о своём переезде — разберём всё вместе. Оставьте номер телефона, и мы перезвоним.",
         hint: "Работаем в будни и выходные, говорим на эстонском, английском и русском.",
+        reply: "Отвечаем в течение 24 часов.",
         email: "info@carepack.ee",
         or: "или напишите нам на",
         form: {
@@ -701,6 +703,7 @@ export const resources = {
         title: "Võta ühendust",
         text: "Räägi meile oma kolimisest ja vaatame detailid koos läbi. Jäta oma telefoninumber ja helistame tagasi.",
         hint: "Töötame tööpäevadel ja nädalavahetustel ning räägime eesti, inglise ja vene keeles.",
+        reply: "Vastame 24 tunni jooksul.",
         email: "info@carepack.ee",
         or: "või kirjuta meile aadressil",
         form: {

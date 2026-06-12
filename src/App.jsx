@@ -546,19 +546,28 @@ function MainPage() {
             <h2 className="contact__title">{t("contact.title")}</h2>
             <p className="contact__text">{t("contact.text")}</p>
             <p className="contact__hint">{t("contact.hint")}</p>
-            <ContactForm />
+            <div className="contact__layout">
+              <div className="contact__main">
+                <ContactForm />
+                <p className="contact__reply">{t("contact.reply")}</p>
+              </div>
+              <div className="contact__visual" aria-hidden="true">
+                <img
+                  className="contact__illustration"
+                  src="/icons/boxes2.png"
+                  alt=""
+                />
+              </div>
+            </div>
             <div className="contact__actions">
               <span className="contact__or">{t("contact.or")}</span>
-              <a className="contact__email" href={`mailto:${t("contact.email")}`}>
+              <a
+                className="contact__email"
+                href={`mailto:${t("contact.email")}`}
+              >
                 {t("contact.email")}
               </a>
             </div>
-            <img
-              className="contact__illustration"
-              src="/icons/boxes2.png"
-              alt=""
-              aria-hidden="true"
-            />
           </div>
         </section>
       </main>
