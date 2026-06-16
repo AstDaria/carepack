@@ -123,12 +123,14 @@ function ContactForm() {
 
   const validate = () => {
     const next = {};
-    if (!form.name.trim()) next.name = t("contact.form.errors.name");
-    if (!form.phone.trim()) next.phone = t("contact.form.errors.phone");
-    if (!form.email.trim()) next.email = t("contact.form.errors.email");
+    // store the error KEY (not the translated string) so messages re-translate
+    // when the language changes
+    if (!form.name.trim()) next.name = "name";
+    if (!form.phone.trim()) next.phone = "phone";
+    if (!form.email.trim()) next.email = "email";
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim()))
-      next.email = t("contact.form.errors.emailInvalid");
-    if (!form.message.trim()) next.message = t("contact.form.errors.message");
+      next.email = "emailInvalid";
+    if (!form.message.trim()) next.message = "message";
     return next;
   };
 
@@ -167,7 +169,7 @@ function ContactForm() {
   const fieldError = (name) =>
     errors[name] ? (
       <span className="contact__field-error" role="alert">
-        {errors[name]}
+        {t(`contact.form.errors.${errors[name]}`)}
       </span>
     ) : null;
 
