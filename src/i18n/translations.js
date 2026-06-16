@@ -264,7 +264,7 @@ export const resources = {
       },
 
       footer: {
-        note: "© 2025 Carepack · Professional packing service in Tartu",
+        note: "© 2026 Carepack · Packing service in Tartu",
       },
     },
   },
@@ -532,7 +532,7 @@ export const resources = {
       },
 
       footer: {
-        note: "© 2025 Carepack · Профессиональная упаковка в Тарту",
+        note: "© 2026 Carepack · Упаковка в Тарту",
       },
     },
   },
@@ -802,7 +802,7 @@ export const resources = {
       },
 
       footer: {
-        note: "© 2025 Carepack · Professionaalne pakkimisteenus Tartus",
+        note: "© 2026 Carepack · Pakkimisteenus Tartus",
       },
     },
   },
