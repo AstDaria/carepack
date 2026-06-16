@@ -88,7 +88,10 @@ function TermsPage() {
 
       <footer className="footer">
         <div className="footer__container">
-          <div className="footer__brand">{t("brand.name")}</div>
+          <div className="footer__left">
+            <div className="footer__brand">{t("brand.name")}</div>
+            <span className="footer__email">{t("contact.email")}</span>
+          </div>
           <div className="footer__note">{t("footer.note")}</div>
           <a className="footer__terms-link" href="/terms">
             {t("nav.terms")}
@@ -108,14 +111,36 @@ function ContactForm() {
     message: "",
     company: "", // honeypot
   });
+  const [errors, setErrors] = useState({});
   const [status, setStatus] = useState("idle"); // idle | sending | success | error
 
-  const onChange = (e) =>
-    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  const onChange = (e) => {
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+    // clear a field's error as soon as the user edits it
+    setErrors((prev) => (prev[name] ? { ...prev, [name]: undefined } : prev));
+  };
+
+  const validate = () => {
+    const next = {};
+    if (!form.name.trim()) next.name = t("contact.form.errors.name");
+    if (!form.phone.trim()) next.phone = t("contact.form.errors.phone");
+    if (!form.email.trim()) next.email = t("contact.form.errors.email");
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim()))
+      next.email = t("contact.form.errors.emailInvalid");
+    if (!form.message.trim()) next.message = t("contact.form.errors.message");
+    return next;
+  };
 
   const onSubmit = async (e) => {
     e.preventDefault();
     if (status === "sending") return;
+    const found = validate();
+    if (Object.keys(found).length > 0) {
+      setErrors(found);
+      return;
+    }
+    setErrors({});
     setStatus("sending");
     try {
       const res = await fetch("/api/contact", {
@@ -139,48 +164,72 @@ function ContactForm() {
     );
   }
 
+  const fieldError = (name) =>
+    errors[name] ? (
+      <span className="contact__field-error" role="alert">
+        {errors[name]}
+      </span>
+    ) : null;
+
+  const inputClass = (name) =>
+    `contact__input${errors[name] ? " contact__input--error" : ""}`;
+
   return (
     <form className="contact__form" onSubmit={onSubmit} noValidate>
       <div className="contact__form-row">
-        <input
-          className="contact__input"
-          type="text"
-          name="name"
-          value={form.name}
-          onChange={onChange}
-          placeholder={t("contact.form.name")}
-          aria-label={t("contact.form.name")}
-          required
-        />
-        <input
-          className="contact__input"
-          type="tel"
-          name="phone"
-          value={form.phone}
-          onChange={onChange}
-          placeholder={t("contact.form.phone")}
-          aria-label={t("contact.form.phone")}
-          required
-        />
+        <div className="contact__field">
+          <input
+            className={inputClass("name")}
+            type="text"
+            name="name"
+            value={form.name}
+            onChange={onChange}
+            placeholder={t("contact.form.name")}
+            aria-label={t("contact.form.name")}
+            aria-invalid={errors.name ? "true" : undefined}
+          />
+          {fieldError("name")}
+        </div>
+        <div className="contact__field">
+          <input
+            className={inputClass("phone")}
+            type="tel"
+            name="phone"
+            value={form.phone}
+            onChange={onChange}
+            placeholder={t("contact.form.phone")}
+            aria-label={t("contact.form.phone")}
+            aria-invalid={errors.phone ? "true" : undefined}
+          />
+          {fieldError("phone")}
+        </div>
       </div>
-      <input
-        className="contact__input"
-        type="email"
-        name="email"
-        value={form.email}
-        onChange={onChange}
-        placeholder={t("contact.form.email")}
-        aria-label={t("contact.form.email")}
-      />
-      <textarea
-        className="contact__input contact__textarea"
-        name="message"
-        value={form.message}
-        onChange={onChange}
-        placeholder={t("contact.form.message")}
-        aria-label={t("contact.form.message")}
-        rows={4}
-      />
+      <div className="contact__field">
+        <input
+          className={inputClass("email")}
+          type="email"
+          name="email"
+          value={form.email}
+          onChange={onChange}
+          placeholder={t("contact.form.email")}
+          aria-label={t("contact.form.email")}
+          aria-invalid={errors.email ? "true" : undefined}
+        />
+        {fieldError("email")}
+      </div>
+      <div className="contact__field">
+        <textarea
+          className={`${inputClass("message")} contact__textarea`}
+          name="message"
+          value={form.message}
+          onChange={onChange}
+          placeholder={t("contact.form.message")}
+          aria-label={t("contact.form.message")}
+          rows={4}
+          aria-invalid={errors.message ? "true" : undefined}
+        />
+        {fieldError("message")}
+      </div>
       {/* Honeypot — hidden from users, catches bots */}
       <input
         className="contact__honeypot"
@@ -559,22 +608,16 @@ function MainPage() {
                 />
               </div>
             </div>
-            <div className="contact__actions">
-              <span className="contact__or">{t("contact.or")}</span>
-              <a
-                className="contact__email"
-                href={`mailto:${t("contact.email")}`}
-              >
-                {t("contact.email")}
-              </a>
-            </div>
           </div>
         </section>
       </main>
 
       <footer className="footer">
         <div className="footer__container">
-          <div className="footer__brand">{t("brand.name")}</div>
+          <div className="footer__left">
+            <div className="footer__brand">{t("brand.name")}</div>
+            <span className="footer__email">{t("contact.email")}</span>
+          </div>
           <div className="footer__note">{t("footer.note")}</div>
           <a className="footer__terms-link" href="/terms">
             {t("nav.terms")}

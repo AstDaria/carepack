@@ -41,8 +41,8 @@ export default async function handler(req, res) {
     return res.status(200).json({ ok: true });
   }
 
-  if (!name || !phone) {
-    return res.status(400).json({ error: "Name and phone are required" });
+  if (!name || !phone || !email || !message) {
+    return res.status(400).json({ error: "All fields are required" });
   }
 
   const to = process.env.CONTACT_TO || "info@carepack.ee";

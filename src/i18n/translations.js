@@ -16,9 +16,9 @@ export const resources = {
 
       hero: {
         title: "Carepack",
-        subtitle: "Professional packing for a stress-free move.",
+        subtitle: "Gentle packing for a stress-free move.",
         text: "We pack everything for you, from wrapping to labeling, so you can focus on what matters. Everything ready in one day.",
-        ctaPrimary: "Get in touch",
+        ctaPrimary: "Order the service",
         ctaSecondary: "See packages",
         note: "All materials included · weekdays & weekends · Tartu and surrounding areas",
       },
@@ -185,14 +185,21 @@ export const resources = {
         form: {
           name: "Your name",
           phone: "Phone number",
-          email: "Email (optional)",
-          message: "Tell us about your move (optional)",
+          email: "Email",
+          message: "Tell us about your move",
           submit: "Send request",
           sending: "Sending…",
           success:
             "Thank you! We've received your request and will get back to you soon.",
           error:
             "Something went wrong. Please try again or email us directly.",
+          errors: {
+            name: "Please enter your name",
+            phone: "Please enter your phone number",
+            email: "Please enter your email",
+            emailInvalid: "Please enter a valid email",
+            message: "Please tell us about your move",
+          },
         },
       },
 
@@ -279,9 +286,9 @@ export const resources = {
 
       hero: {
         title: "Carepack",
-        subtitle: "Профессиональная упаковка для спокойного переезда.",
+        subtitle: "Бережная упаковка для спокойного переезда.",
         text: "Мы упакуем всё за вас: от обёртывания до маркировки. Вы сможете сосредоточиться на главном. Всё готово за один день.",
-        ctaPrimary: "Связаться с нами",
+        ctaPrimary: "Заказать услугу",
         ctaSecondary: "Посмотреть пакеты",
         note: "Все материалы включены · будни и выходные · Тарту и окрестности",
       },
@@ -446,14 +453,21 @@ export const resources = {
         form: {
           name: "Ваше имя",
           phone: "Номер телефона",
-          email: "Email (необязательно)",
-          message: "Расскажите о переезде (необязательно)",
+          email: "Email",
+          message: "Расскажите о переезде",
           submit: "Отправить заявку",
           sending: "Отправляем…",
           success:
             "Спасибо! Мы получили вашу заявку и скоро свяжемся с вами.",
           error:
             "Что-то пошло не так. Попробуйте ещё раз или напишите нам напрямую.",
+          errors: {
+            name: "Укажите ваше имя",
+            phone: "Укажите номер телефона",
+            email: "Укажите email",
+            emailInvalid: "Укажите корректный email",
+            message: "Расскажите о переезде",
+          },
         },
       },
 
@@ -540,9 +554,9 @@ export const resources = {
 
       hero: {
         title: "Carepack",
-        subtitle: "Professionaalne pakkimine stressivabaks kolimiseks.",
+        subtitle: "Hoolikas pakkimine stressivabaks kolimiseks.",
         text: "Võtame kogu pakkimisprotsessi enda peale, sorteerimisest märgistamiseni. Saad keskenduda olulisele. Kõik valmis ühe päevaga.",
-        ctaPrimary: "Võta ühendust",
+        ctaPrimary: "Telli teenus",
         ctaSecondary: "Vaata pakette",
         note: "Kõik materjalid kaasas · tööpäevad ja nädalavahetused · Tartu ja ümbrus",
       },
@@ -709,14 +723,21 @@ export const resources = {
         form: {
           name: "Sinu nimi",
           phone: "Telefoninumber",
-          email: "E-post (valikuline)",
-          message: "Räägi meile oma kolimisest (valikuline)",
+          email: "E-post",
+          message: "Räägi meile oma kolimisest",
           submit: "Saada päring",
           sending: "Saadan…",
           success:
             "Aitäh! Saime sinu päringu kätte ja võtame peagi ühendust.",
           error:
             "Midagi läks valesti. Proovi uuesti või kirjuta meile otse.",
+          errors: {
+            name: "Palun sisesta oma nimi",
+            phone: "Palun sisesta telefoninumber",
+            email: "Palun sisesta e-post",
+            emailInvalid: "Palun sisesta korrektne e-post",
+            message: "Palun räägi oma kolimisest",
+          },
         },
       },
 
