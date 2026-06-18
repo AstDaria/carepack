@@ -508,6 +508,9 @@ function MainPage() {
               {t("nav.terms")}
             </a>
           </p>
+          <a className="button button--primary payment__cta" href="#contact">
+            {t("hero.ctaPrimary")}
+          </a>
         </div>
 
         <section id="not-pack" className="not-pack">

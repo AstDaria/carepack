@@ -937,18 +937,16 @@ a {
   border-radius: 10px;
   font-size: 14px;
   font-weight: 600;
-  color: var(--pkg-color);
+  color: #fff;
+  background: var(--pkg-color);
   border: 1.5px solid var(--pkg-color);
-  transition:
-    background 0.2s,
-    color 0.2s;
+  transition: opacity 0.2s;
   text-decoration: none;
   width: 100%;
   box-sizing: border-box;
 
   &:hover {
-    background: var(--pkg-color);
-    color: #fff;
+    opacity: 0.88;
   }
 }
 
@@ -962,10 +960,10 @@ a {
   border: 1px solid var(--border-light);
 
   &--price {
-    color: #fff;
+    color: var(--pkg-color);
     font-weight: 700;
-    background: var(--pkg-color);
-    border-color: var(--pkg-color);
+    background: transparent;
+    border: 1.5px solid var(--pkg-color);
     margin-top: 8px;
   }
 }
@@ -1099,6 +1097,10 @@ a {
   font-size: 13px;
   color: var(--muted);
   text-align: center;
+}
+
+.payment__cta {
+  margin-top: 24px;
 }
 
 .payment__terms-link {
